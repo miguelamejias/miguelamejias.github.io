@@ -1,0 +1,41 @@
+---
+// Basic Dark Call To Action section
+// ------------
+// Description: A centered call to action section that contains: a title, text, background image, notification and a button.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import CTA from '../../ui/CTA.astro'
+import Button from '../../ui/Button.astro'
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Highlight from '../../ui/Highlight.astro'
+
+// Content
+import ctaImage from '../../../assets/cta-dark-bg.webp'
+import badge from '../../../assets/badge.svg'
+---
+
+<Section>
+	<Row>
+		<Col span="1" />
+		<Col span="10">
+			<CTA
+				title="Let's align your technology with your business."
+				text="Stop letting misalignment drain your resources. Reach out to translate technical complexity into clear business decisions."
+				mode="dark"
+				bg={ctaImage}
+			>
+				<ChipNotification radius="rounded-full" classes="mb-6 box">
+					<span class="font-mono text-sm">Actionable Advice</span>
+				</ChipNotification>
+				<Button size="lg" style="primary" link="/contact"> Contact me </Button>
+			</CTA>
+		</Col>
+		<Col span="1" />
+	</Row>
+</Section>
