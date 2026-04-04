@@ -11,6 +11,10 @@ export default {
       pattern: /col-span-(\d+)/,
       variants: ["lg"],
     },
+    {
+      pattern: /col-start-(\d+)/,
+      variants: ["lg"],
+    },
     // Height
     {
       pattern: /h-(0|2|3|4|6|8|12|16|24|32)/,
@@ -32,6 +36,23 @@ export default {
     },
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        md: '1.5rem',
+        lg: '2rem',
+        xl: '2rem',
+        '2xl': '2rem',
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1400px',
+      },
+    },
     extend: {
       colors: {
         transparent: "transparent",

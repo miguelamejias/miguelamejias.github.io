@@ -15,7 +15,7 @@ const SEO = {
 	<!-- HERO -->
 	<Section id="hero" classes="min-h-screen flex items-center justify-center pt-32 pb-24">
 		<Row>
-			<Col span="10" classes="max-w-4xl mx-auto text-center">
+			<Col span="10" classes="lg:col-start-2 text-center">
 				<h1 class="text-6xl md:text-8xl font-headings font-black tracking-tight mb-8">
 					No es un problema de tecnología.<br/>
 					<span class="text-primary-500">Es un problema de decisiones.</span>
@@ -34,7 +34,7 @@ const SEO = {
 	<!-- PROBLEMA -->
 	<Section id="problema" classes="py-32 bg-neutral-950 border-t border-neutral-900">
 		<Row>
-			<Col span="10" classes="max-w-4xl mx-auto">
+			<Col span="10" classes="lg:col-start-2">
 				<h2 class="text-5xl md:text-6xl font-bold mb-12 text-white">Las empresas creen que tienen problemas tecnológicos.<br/><span class="text-accent">No los tienen.</span></h2>
 				
 				<p class="text-2xl text-neutral-300 mb-12">
@@ -60,7 +60,7 @@ const SEO = {
 	<!-- INSIGHT -->
 	<Section id="insight" classes="py-32 bg-primary-950">
 		<Row>
-			<Col span="10" classes="max-w-4xl mx-auto text-center">
+			<Col span="10" classes="lg:col-start-2 text-center">
 				<h2 class="text-5xl md:text-7xl font-black mb-8 text-white">El problema no es técnico.<br/><span class="text-primary-500">Es estructural.</span></h2>
 				<p class="text-2xl text-neutral-200">
 					Negocio y tecnología están hablando el mismo idioma...<br/>
@@ -73,7 +73,7 @@ const SEO = {
 	<!-- SOLUCIÓN & CÓMO TRABAJO -->
 	<Section id="solucion" classes="py-32 border-b border-neutral-900">
 		<Row>
-			<Col span="12" classes="max-w-5xl mx-auto">
+			<Col span="12">
 				<div class="mb-24">
 					<h2 class="text-5xl font-bold mb-8">Aquí es donde entro yo.</h2>
 					<p class="text-2xl text-neutral-300 mb-8">Actúo como <strong class="text-accent cursor-fancy">traductor estratégico</strong> entre negocio y tecnología:</p>
@@ -90,23 +90,31 @@ const SEO = {
 				</div>
 
 				<h3 class="text-4xl mb-12">Cómo Trabajo</h3>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-					<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all">
-						<h4 class="text-accent text-2xl mb-4 font-mono">1. Diagnóstico</h4>
-						<p class="text-xl text-neutral-300">Identifico dónde está la desconexión real.</p>
-					</div>
-					<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all">
-						<h4 class="text-accent text-2xl mb-4 font-mono">2. Traducción</h4>
-						<p class="text-xl text-neutral-300">Conecto negocio con tecnología.</p>
-					</div>
-					<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all">
-						<h4 class="text-accent text-2xl mb-4 font-mono">3. Alineación</h4>
-						<p class="text-xl text-neutral-300">Aseguro que todos trabajen hacia el mismo objetivo.</p>
-					</div>
-					<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all">
-						<h4 class="text-accent text-2xl mb-4 font-mono">4. Decisión</h4>
-						<p class="text-xl text-neutral-300">Genero claridad para avanzar con criterio.</p>
-					</div>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="3">
+				<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all h-full">
+					<h4 class="text-accent text-2xl mb-4 font-mono">1. Diagnóstico</h4>
+					<p class="text-xl text-neutral-300">Identifico dónde está la desconexión real.</p>
+				</div>
+			</Col>
+			<Col span="3">
+				<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all h-full">
+					<h4 class="text-accent text-2xl mb-4 font-mono">2. Traducción</h4>
+					<p class="text-xl text-neutral-300">Conecto negocio con tecnología.</p>
+				</div>
+			</Col>
+			<Col span="3">
+				<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all h-full">
+					<h4 class="text-accent text-2xl mb-4 font-mono">3. Alineación</h4>
+					<p class="text-xl text-neutral-300">Aseguro que todos trabajen hacia el mismo objetivo.</p>
+				</div>
+			</Col>
+			<Col span="3">
+				<div class="p-8 border border-neutral-800 rounded-lg outline hover:outline-primary-500 transition-all h-full">
+					<h4 class="text-accent text-2xl mb-4 font-mono">4. Decisión</h4>
+					<p class="text-xl text-neutral-300">Genero claridad para avanzar con criterio.</p>
 				</div>
 			</Col>
 		</Row>
@@ -115,31 +123,30 @@ const SEO = {
 	<!-- PARA QUIÉN ES & AUTORIDAD -->
 	<Section id="autoridad" classes="py-32 bg-neutral-950">
 		<Row>
-			<Col span="10" classes="max-w-5xl mx-auto">
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-					<div>
-						<h3 class="text-3xl mb-8 border-b border-primary-500 pb-4 inline-block">Para quién es</h3>
-						<ul class="text-xl text-neutral-300 space-y-4 font-mono">
-							<li><span class="text-accent mr-2">/</span> CTOs</li>
-							<li><span class="text-accent mr-2">/</span> Startups</li>
-							<li><span class="text-accent mr-2">/</span> Empresas en transformación digital</li>
-							<li><span class="text-accent mr-2">/</span> Equipos con problemas de alineación</li>
-							<li><span class="text-accent mr-2">/</span> Líderes que toman decisiones</li>
-						</ul>
-					</div>
-					<div>
-						<h3 class="text-3xl mb-8 border-b border-primary-500 pb-4 inline-block">Autoridad</h3>
-						<p class="text-xl text-neutral-400 mb-6 font-mono">He trabajado en:</p>
-						<ul class="text-xl text-neutral-300 space-y-4 font-mono mb-8">
-							<li><span class="text-accent mr-2">/</span> Desarrollo de hardware</li>
-							<li><span class="text-accent mr-2">/</span> Gestión de proyectos</li>
-							<li><span class="text-accent mr-2">/</span> Soporte IT</li>
-							<li><span class="text-accent mr-2">/</span> Coordinación técnica</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="mt-24 p-12 bg-neutral-900 rounded-lg text-center">
+			<Col span="6">
+				<h3 class="text-3xl mb-8 border-b border-primary-500 pb-4 inline-block">Para quién es</h3>
+				<ul class="text-xl text-neutral-300 space-y-4 font-mono">
+					<li><span class="text-accent mr-2">/</span> CTOs</li>
+					<li><span class="text-accent mr-2">/</span> Startups</li>
+					<li><span class="text-accent mr-2">/</span> Empresas en transformación digital</li>
+					<li><span class="text-accent mr-2">/</span> Equipos con problemas de alineación</li>
+					<li><span class="text-accent mr-2">/</span> Líderes que toman decisiones</li>
+				</ul>
+			</Col>
+			<Col span="6">
+				<h3 class="text-3xl mb-8 border-b border-primary-500 pb-4 inline-block">Autoridad</h3>
+				<p class="text-xl text-neutral-400 mb-6 font-mono">He trabajado en:</p>
+				<ul class="text-xl text-neutral-300 space-y-4 font-mono mb-8">
+					<li><span class="text-accent mr-2">/</span> Desarrollo de hardware</li>
+					<li><span class="text-accent mr-2">/</span> Gestión de proyectos</li>
+					<li><span class="text-accent mr-2">/</span> Soporte IT</li>
+					<li><span class="text-accent mr-2">/</span> Coordinación técnica</li>
+				</ul>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="12">
+				<div class="mt-12 p-12 bg-neutral-900 rounded-lg text-center">
 					<p class="text-2xl text-neutral-400 font-mono mb-6">He visto el mismo problema repetirse:</p>
 					<h3 class="text-5xl font-black text-white">No es tecnología.<br/><span class="text-accent">Es decisión.</span></h3>
 				</div>
@@ -150,7 +157,7 @@ const SEO = {
 	<!-- SOBRE MI (CV) -->
 	<Section id="sobre-mi" classes="py-32">
 		<Row>
-			<Col span="10" classes="max-w-4xl mx-auto">
+			<Col span="7">
 				<h2 class="text-5xl font-bold mb-12">Sobre Mí</h2>
 				<p class="text-2xl text-neutral-300 mb-8 leading-relaxed">
 					Soy ingeniero con experiencia integral de 8 años en hardware, proyectos y soporte IT. <br/><br/>
@@ -168,14 +175,16 @@ const SEO = {
 					<p class="text-2xl text-neutral-300 mb-4">Y en todos vi el mismo patrón:</p>
 					<p class="text-3xl font-bold text-white">Los problemas no vienen de la tecnología.<br/>Vienen de cómo se define, se comunica y se ejecuta.</p>
 				</div>
-				
-				<div class="mt-16 pt-16 border-t border-neutral-800">
+			</Col>
+			<Col span="5">
+				<div class="pt-16 lg:pt-24 border-t lg:border-t-0 border-neutral-800">
 					<h3 class="text-2xl mb-8 font-headings text-primary-500">Resumen Técnico</h3>
-					<div class="grid md:grid-cols-2 gap-8 text-neutral-300 font-mono text-sm leading-relaxed">
+					<div class="space-y-8 text-neutral-300 font-mono text-sm leading-relaxed">
 						<div>
 							<strong class="text-accent block mb-2">Desarrollo y Software</strong>
 							Python (Avanzado), C#, C++, Java.<br/>UX/UI, WordPress.
-							<br/><br/>
+						</div>
+						<div>
 							<strong class="text-accent block mb-2">Gestión y Metodologías</strong>
 							Scrum (Certificado SFPC™), Metodologías Ágiles, Gestión de Riesgos.
 						</div>
@@ -193,24 +202,32 @@ const SEO = {
 	<!-- CONTENIDO (Blog Hub) -->
 	<Section id="contenido" classes="py-32 bg-neutral-950">
 		<Row>
-			<Col span="10" classes="max-w-4xl mx-auto text-center">
+			<Col span="12" classes="text-center">
 				<h2 class="text-5xl font-bold mb-16 text-white">Últimos Insights</h2>
-				
-				<div class="flex flex-col gap-6 mb-16 text-left">
-					<a href="/blog/perdida-dinero" class="p-8 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-primary-500 group transition-all">
-						<h3 class="text-2xl text-white group-hover:text-primary-500 font-bold mb-4">"Esto está haciendo perder dinero a las empresas"</h3>
-						<p class="text-neutral-400 font-mono text-sm">Leer artículo →</p>
-					</a>
-					<a href="/blog/error-proyectos" class="p-8 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-primary-500 group transition-all">
-						<h3 class="text-2xl text-white group-hover:text-primary-500 font-bold mb-4">"El error que nadie ve en los proyectos tecnológicos"</h3>
-						<p class="text-neutral-400 font-mono text-sm">Leer artículo →</p>
-					</a>
-					<a href="/blog/idioma-diferente" class="p-8 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-primary-500 group transition-all">
-						<h3 class="text-2xl text-white group-hover:text-primary-500 font-bold mb-4">"Negocio y tecnología no se entienden"</h3>
-						<p class="text-neutral-400 font-mono text-sm">Leer artículo →</p>
-					</a>
-				</div>
-				
+			</Col>
+		</Row>
+		<Row>
+			<Col span="4">
+				<a href="/blog/perdida-dinero" class="block p-8 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-primary-500 group transition-all h-full">
+					<h3 class="text-2xl text-white group-hover:text-primary-500 font-bold mb-4">"Esto está haciendo perder dinero a las empresas"</h3>
+					<p class="text-neutral-400 font-mono text-sm">Leer artículo →</p>
+				</a>
+			</Col>
+			<Col span="4">
+				<a href="/blog/error-proyectos" class="block p-8 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-primary-500 group transition-all h-full">
+					<h3 class="text-2xl text-white group-hover:text-primary-500 font-bold mb-4">"El error que nadie ve en los proyectos tecnológicos"</h3>
+					<p class="text-neutral-400 font-mono text-sm">Leer artículo →</p>
+				</a>
+			</Col>
+			<Col span="4">
+				<a href="/blog/idioma-diferente" class="block p-8 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-primary-500 group transition-all h-full">
+					<h3 class="text-2xl text-white group-hover:text-primary-500 font-bold mb-4">"Negocio y tecnología no se entienden"</h3>
+					<p class="text-neutral-400 font-mono text-sm">Leer artículo →</p>
+				</a>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="12" classes="text-center mt-8">
 				<Button size="lg" link="/blog" classes="bg-neutral-800 text-white hover:bg-neutral-700">Ver más contenido</Button>
 			</Col>
 		</Row>
@@ -219,8 +236,8 @@ const SEO = {
 	<!-- FRASE ANCLA -->
 	<Section id="ancla" classes="py-32 bg-primary-950 border-y border-primary-900">
 		<Row>
-			<Col span="10" classes="max-w-5xl mx-auto text-center">
-				<p class="text-4xl md:text-5xl font-black text-white leading-tight">
+			<Col span="10" classes="lg:col-start-2 text-center">
+				<p class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
 					Si negocio y tecnología no están alineados, el costo no es técnico. <br/>
 					<span class="text-accent mt-4 block">Es financiero.</span>
 				</p>
@@ -231,7 +248,7 @@ const SEO = {
 	<!-- CONTACTO -->
 	<Section id="contacto" classes="py-32">
 		<Row>
-			<Col span="8" classes="max-w-3xl mx-auto text-center">
+			<Col span="8" classes="lg:col-start-3 text-center">
 				<h2 class="text-5xl font-bold mb-8">Hablemos</h2>
 				<p class="text-2xl text-neutral-300 mb-12">
 					Si estás enfrentando problemas en tus proyectos tecnológicos o necesitas claridad para tomar decisiones.
