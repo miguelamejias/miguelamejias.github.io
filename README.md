@@ -4,8 +4,7 @@ Open-source Astro website template with fully responsive, customizable TailwindC
 
 ![just-the-basics](https://oxygenna-themes.b-cdn.net/foxi-astro/foxi.png)
 
-[![View live Demo](https://oxygenna-themes.b-cdn.net/foxi-astro/button-demo.svg)](https://foxi.netlify.app)
-[![Page Speed Insights (100%)](https://oxygenna-themes.b-cdn.net/foxi-astro/button-pagespeed.svg)](https://pagespeed.web.dev/analysis/https-foxi-netlify-app/c9ig3t85mu?form_factor=desktop)
+
 
 ## Introduction
 
@@ -35,44 +34,6 @@ Foxi is a free, highly customizable, and production-ready template for Astro, ut
 - **Integrated Analytics:** Includes integrated Google Analytics and Google Tag Manager functionalities.
 - **Sitemap Included:** Includes a sitemap to enhance website navigation and search engine indexing.
 
-### Upgrade to Pro Version
-
-| Feature                   | Free Version               | Pro Version                                                      |
-| :------------------------ | :------------------------- | :--------------------------------------------------------------- |
-| Tailwind CSS              | ✅                         | ✅                                                               |
-| Mobile Responsive         | ✅                         | ✅                                                               |
-| SEO-Friendly              | ✅                         | ✅                                                               |
-| i18n Multilingual Support | ❌                         | ✅                                                               |
-| Sitepins CMS              | ❌                         | ✅                                                               |
-| Content Collections       | ✅                         | ✅                                                               |
-| Mega Menu                 | ❌                         | ✅                                                               |
-| Video Popup               | ❌                         | ✅                                                               |
-| Lottie File Integration   | ❌                         | ✅                                                               |
-| Homepage Variations       | ❌                         | ✅                                                               |
-| Features Page Variations  | ❌                         | ✅                                                               |
-| Integrations Page         | ❌                         | ✅                                                               |
-| Advanced Pricing Page     | ❌                         | ✅                                                               |
-| Blog Collection           | ✅                         | ✅                                                               |
-| Blog Categories           | ✅                         | ✅                                                               |
-| Blog Authors              | ❌                         | ✅                                                               |
-| Post Pagination           | ❌                         | ✅                                                               |
-| eGuides Collection        | ❌                         | ✅                                                               |
-| Roadmap Page              | ❌                         | ✅                                                               |
-| SignUp Page               | ❌                         | ✅                                                               |
-| Changelog Page            | ✅                         | ✅                                                               |
-| FAQ Page                  | ✅                         | ✅                                                               |
-| Terms Page                | ✅                         | ✅                                                               |
-| Working Contact Page      | ❌                         | ✅                                                               |
-| Total Pages               | 10                         | 20+                                                              |
-|                           |                            |                                                                  |
-| Free Updates              | ✅                         | ✅                                                               |
-| License                   | MIT                        | Commercial                                                       |
-|                           |                            |                                                                  |
-| Pricing                   | Free                       | $79.99                                                           |
-|                           | Continue with Free version | [View Pro Version](https://astro.build/themes/details/foxi-pro/) |
-
-[![Get Pro Version](https://oxygenna-themes.b-cdn.net/foxi-pro-astro/primary-button-get-foxi-pro.svg)](https://oxygenna.lemonsqueezy.com/buy/2e32ec07-aa31-45a4-835d-8ebb7f6048cc)
-[![View Foxi Pro live Demo](https://oxygenna-themes.b-cdn.net/foxi-pro-astro/secondary-button-foxi-pro-demo.svg)](https://foxi-pro.netlify.app/)
 
 ## Getting Started
 
@@ -208,37 +169,3 @@ Copyright © 2026 - Designed & Developed by [Oxygenna](http://www.oxygenna.com/)
 
 Released under the MIT license.
 
-## Want more themes?
-
-### Mizu
-
-Check out **Mizu**, a product launch template designed for modern SaaS companies, digital products, and ambitious startups.
-
-![mizu](https://oxygenna-themes.b-cdn.net/mizu-astro/mizu-theme.png)
-
-[![Get Mizu](https://oxygenna-themes.b-cdn.net/mizu-astro/primary-button-get-mizu.svg)](https://astro.build/themes/details/mizu/)
-[![View live Demo](https://oxygenna-themes.b-cdn.net/mizu-astro/secondary-button-mizu-demo.svg)](https://mizu-theme.netlify.app/)
-
-### Toki
-
-Check out **Toki**, a standout agency template with striking design, blazing speed, built for modern agencies and creatives.
-
-![toki-theme](https://oxygenna-themes.b-cdn.net/toki-astro/promo/toki-theme-promo.png)
-
-[![Get Toki](https://oxygenna-themes.b-cdn.net/toki-astro/promo/primary-button-get-toki.svg)](https://astro.build/themes/details/toki/)
-[![View live Demo](https://oxygenna-themes.b-cdn.net/toki-astro/promo/secondary-button-toki-demo.svg)](https://toki-theme.netlify.app/)
-
-### Foxi Framer
-
-Check out **Foxi Framer**, our premium Astro website template with fully responsive, customizable Tailwind CSS components.
-
-![foxi-framer](https://oxygenna-themes.b-cdn.net/foxi-astro/foxi.png)
-
-[![Get Foxi Framer](https://oxygenna-themes.b-cdn.net/foxi-astro/primary-button-get-foxi-framer.svg)](https://framer.link/daY9kpl)
-[![View live Demo](https://oxygenna-themes.b-cdn.net/foxi-astro/secondary-button-foxi-framer-demo.svg)](https://foxi.framer.website/)
-
-## Join the Community
-
-You can join our community on [Discord](https://discord.gg/YC5Eup8ZEx)!
-
-[![Hire Us](https://oxygenna-themes.b-cdn.net/foxi-astro/hireus.png)](mailto:themes@oxygenna.com,christos@oxygenna.com)
