@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hardware-and-ai",
+    "title": "Hardware + AI: The future of local industry",
+    "description": "Decentralizing intelligence back to the edge. How local manufacturing is poised for a silicon-driven resurgence.",
+    "date": "2024-05-12",
+    "category": "STRATEGY",
+    "ref_id": "088",
+    "cover_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA18xq2V104j3OR0Vyl9qY6QtvqHeiCo5hSaVF_rW56wNr896dgKniWYYoXbPUm8ANqCplq8uUtJyLcG9g31zVQyMSRqmgukImTnQdrqOkZU-_opxlylwGVMBv7HOCm-fycaOFueXWM-FiDdMqbJwB5kdr1yfhBaqcJ29JNqRLuh5UL3MBlV_Yq5f0aAso33-lQExpVov4K29Vl06FDbhUY9Mb6X_kfDQopRfkkqktjPtk3lX0sWPdWZFnpyrRaPQVueVpOKWi48Ds",
+    "featured": true
+  },
+  {
+    "id": "cost-of-misalignment",
+    "title": "The cost of misalignment",
+    "description": "Quantifying the technical debt incurred when business vision and engineering execution drift apart.",
+    "date": "2024-03-15",
+    "category": "ARCHITECTURE",
+    "ref_id": "082",
+    "cover_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBtyHH6lcj1VlEBvLStXPRLN5ZFv5NC9NKdUK0j57B2gDkJCRgueewyV1c-LoRrHD_vZNR516_pjHA4dW_yL5JLwOpCKAIfdf1ZkMbf-0dU6T1lGoKgPdth6PGwNibh679M70yCgUqX3r2yoU2cXReR3SiOMXYnsZcn4_p1xBnUKqxBbIY2EGk48TW44w42dFqLV9F4KbKEmi7yfSAqG2IKXDXWIGcqDYK1JtH2rjTABs2DNrJY2h_q_6sOrhcV2viWG3pzyv89keA",
+    "featured": false
+  },
+  {
+    "id": "scaling-strategy",
+    "title": "Scaling Strategy: Beyond the Dashboard",
+    "description": "Tools are not strategy. Why metrics-driven development often leads to localized maxima while missing global goals.",
+    "date": "2024-02-02",
+    "category": "SYSTEM_DESIGN",
+    "ref_id": "079",
+    "cover_image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCXQOS_OEznNW_RBncSS8oSGsbWz6gkdg5ZcNTMEKfLhFHEcs6UO0thuMj0sqIKg_42VXHvFAVURfZY0YHRRMB2JBwYiQmrSidiOWsMg3KDLpIhMZMb3fwOp0hjpKUnc1mvDlilV3QmUxGpuK4DLiVixTxsZRvVkF1YCj36LGsdEEQ5ZG-rmIiBvN5PFCIHDWxGkJG5GmUV9IVp4KWONKJRsZBHTbpnKE_5NMvDdSu69d46OnUa62Y2rUIm-c8ra6Zn5UHzb2Jyi8M",
+    "featured": false
+  }
+]
