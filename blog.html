@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Strategic Thinking &amp; Technical Insights | Miguel Ángel Mejía</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Fira+Code:wght@300;400;500&amp;family=Space+Grotesk:wght@300;400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#353534",
+                    "on-secondary-container": "#bbb4ac",
+                    "tertiary-fixed": "#caf300",
+                    "background": "#131313",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container-high": "#2a2a2a",
+                    "on-surface-variant": "#e0c0b5",
+                    "on-primary-fixed": "#380c00",
+                    "tertiary-fixed-dim": "#b0d500",
+                    "on-primary": "#5c1a00",
+                    "surface-tint": "#ffb59c",
+                    "on-secondary": "#33302a",
+                    "on-tertiary-fixed-variant": "#3e4c00",
+                    "on-secondary-fixed": "#1e1b16",
+                    "outline-variant": "#58423a",
+                    "on-tertiary-container": "#cff900",
+                    "surface-dim": "#131313",
+                    "error-container": "#93000a",
+                    "surface-variant": "#353534",
+                    "secondary-fixed-dim": "#ccc5be",
+                    "on-tertiary": "#2a3400",
+                    "secondary-container": "#4a4640",
+                    "on-error": "#690005",
+                    "primary": "#ffb59c",
+                    "on-tertiary-fixed": "#171e00",
+                    "on-primary-container": "#ffe2d9",
+                    "primary-fixed-dim": "#ffb59c",
+                    "on-error-container": "#ffdad6",
+                    "secondary": "#ccc5be",
+                    "tertiary-container": "#5c7000",
+                    "surface-bright": "#393939",
+                    "on-primary-fixed-variant": "#822800",
+                    "on-background": "#e5e2e1",
+                    "on-surface": "#e5e2e1",
+                    "outline": "#a78a81",
+                    "tertiary": "#b0d500",
+                    "on-secondary-fixed-variant": "#4a4640",
+                    "inverse-primary": "#a93702",
+                    "error": "#ffb4ab",
+                    "primary-container": "#b7410e",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface": "#131313",
+                    "inverse-on-surface": "#313030",
+                    "secondary-fixed": "#e9e1d9",
+                    "primary-fixed": "#ffdbcf",
+                    "surface-container": "#201f1f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Archivo Black"],
+                    "body": ["Manrope"],
+                    "label": ["Fira Code"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #131313; color: #E5E2E1; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(183, 65, 14, 0.05) 1px, transparent 1px); background-size: 40px 40px; }
+    </style>
+</head>
+<body class="blueprint-grid min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 bg-[#131313]/70 backdrop-blur-md">
+<div class="font-['Archivo_Black'] text-2xl tracking-tighter text-[#E5E2E1]">STRATEGY_ARCHITECT</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="index.html">HOME</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="cv.html">CV</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="projects.html">PROJECTS</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#B7410E] border-b-2 border-[#B7410E] pb-1" href="blog.html">BLOG</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="contact.html">CONTACT</a>
+</div>
+<button class="bg-primary-container text-on-primary-container font-['Archivo_Black'] uppercase text-xs px-6 py-3 tracking-widest active:scale-95 duration-75 hover:shadow-[0_0_15px_#B0D500]/30 transition-all">
+            ESTABLISH_CONNECTION
+        </button>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Header -->
+<header class="mb-24">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-['Fira_Code'] text-tertiary text-xs tracking-widest uppercase">SERIAL_NO: INTEL_2024_08</span>
+<div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+</div>
+<h1 class="font-['Archivo_Black'] text-6xl md:text-8xl uppercase tracking-tighter leading-none text-on-background mb-8">
+                Strategic Thinking &amp; <span class="text-primary-container">Technical Insights</span>
+</h1>
+<p class="font-['Manrope'] text-xl md:text-2xl text-on-surface-variant max-w-3xl leading-relaxed">
+                A technical manifesto on the intersection of engineering management, hardware evolution, and industrial strategy.
+            </p>
+</header>
+<!-- Featured Section -->
+<section class="mb-32 grid grid-cols-1 md:grid-cols-12 gap-0 border border-outline-variant/10">
+<div class="md:col-span-7 aspect-video relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a high-tech circuit board with copper traces and glowing orange indicators in a dark industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbW5oXH3gBfuvZ4LbArt_rNrHgYmPTyn3IJjIkG479CO_cxRlE1KQQxSKfbklbUNzT3axScYu0kDE4w17Mm1v3eWb-_aL7gi9h2ymm7_Jdu3PD7JscdMFkIc3TcUe0_0eD1v-5dUsdCgm8ozE5a4rsH55MgOfPUxJnZAR5xVplFEOzxEUmsX-Sybbdqw7Al8Dncu4K6CUIlbXEJb9_z_kIE-6eSIWX33x1Y7Mc0Qw52h91BnDj09VeWXpd8MV8QO8ttdD_Cpr95JQ"/>
+<div class="absolute top-4 left-4 bg-primary-container px-3 py-1 font-['Fira_Code'] text-[10px] text-on-primary-container">
+                    LATEST_RELEASE
+                </div>
+</div>
+<div class="md:col-span-5 bg-surface-container-low p-10 flex flex-col justify-center">
+<div class="font-['Fira_Code'] text-tertiary text-[10px] mb-4 uppercase tracking-[0.2em]">MAY 12, 2024 // STRATEGY</div>
+<h2 class="font-['Archivo_Black'] text-3xl uppercase tracking-tighter mb-6 leading-tight">
+                    Why most tech projects fail before they start
+                </h2>
+<p class="font-['Manrope'] text-on-surface-variant mb-8 leading-relaxed">
+                    Misalignment isn't a technical problem; it's an architectural one. Exploring the structural deficits that sink complex engineering initiatives in the first 90 days.
+                </p>
+<a class="group flex items-center gap-4 font-['Archivo_Black'] text-sm tracking-widest text-[#B7410E] hover:text-[#B0D500] transition-colors" href="blog.html">
+                    READ_FULL_MANIFESTO
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Articles Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+<!-- Article Card 1 -->
+<div class="flex flex-col group">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" data-alt="Digital representation of complex data networks and glowing connections in deep orange and neon green tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA18xq2V104j3OR0Vyl9qY6QtvqHeiCo5hSaVF_rW56wNr896dgKniWYYoXbPUm8ANqCplq8uUtJyLcG9g31zVQyMSRqmgukImTnQdrqOkZU-_opxlylwGVMBv7HOCm-fycaOFueXWM-FiDdMqbJwB5kdr1yfhBaqcJ29JNqRLuh5UL3MBlV_Yq5f0aAso33-lQExpVov4K29Vl06FDbhUY9Mb6X_kfDQopRfkkqktjPtk3lX0sWPdWZFnpyrRaPQVueVpOKWi48Ds"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-['Fira_Code'] text-[10px] text-tertiary uppercase">FUTURE_INDUSTRIES</span>
+<span class="font-['Fira_Code'] text-[10px] text-on-surface-variant/50">APR 28</span>
+</div>
+<h3 class="font-['Archivo_Black'] text-xl uppercase tracking-tighter mb-4 leading-snug group-hover:text-primary transition-colors">
+                    Hardware + AI: The future of local industry
+                </h3>
+<p class="font-['Manrope'] text-sm text-on-surface-variant/80 mb-6 line-clamp-3">
+                    Decentralizing intelligence back to the edge. How local manufacturing is poised for a silicon-driven resurgence.
+                </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="font-['Fira_Code'] text-[10px] text-on-surface-variant/40">REF_ID: 088</span>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+</div>
+<!-- Article Card 2 -->
+<div class="flex flex-col group">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" data-alt="Minimalist architectural blueprint with sharp white lines on a dark background with subtle texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtyHH6lcj1VlEBvLStXPRLN5ZFv5NC9NKdUK0j57B2gDkJCRgueewyV1c-LoRrHD_vZNR516_pjHA4dW_yL5JLwOpCKAIfdf1ZkMbf-0dU6T1lGoKgPdth6PGwNibh679M70yCgUqX3r2yoU2cXReR3SiOMXYnsZcn4_p1xBnUKqxBbIY2EGk48TW44w42dFqLV9F4KbKEmi7yfSAqG2IKXDXWIGcqDYK1JtH2rjTABs2DNrJY2h_q_6sOrhcV2viWG3pzyv89keA"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-['Fira_Code'] text-[10px] text-tertiary uppercase">ARCHITECTURE</span>
+<span class="font-['Fira_Code'] text-[10px] text-on-surface-variant/50">MAR 15</span>
+</div>
+<h3 class="font-['Archivo_Black'] text-xl uppercase tracking-tighter mb-4 leading-snug group-hover:text-primary transition-colors">
+                    The cost of misalignment
+                </h3>
+<p class="font-['Manrope'] text-sm text-on-surface-variant/80 mb-6 line-clamp-3">
+                    Quantifying the technical debt incurred when business vision and engineering execution drift apart.
+                </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="font-['Fira_Code'] text-[10px] text-on-surface-variant/40">REF_ID: 082</span>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+</div>
+<!-- Article Card 3 -->
+<div class="flex flex-col group">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" data-alt="Abstract satellite view of Earth with digital light networks connecting continents in amber and gold" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXQOS_OEznNW_RBncSS8oSGsbWz6gkdg5ZcNTMEKfLhFHEcs6UO0thuMj0sqIKg_42VXHvFAVURfZY0YHRRMB2JBwYiQmrSidiOWsMg3KDLpIhMZMb3fwOp0hjpKUnc1mvDlilV3QmUxGpuK4DLiVixTxsZRvVkF1YCj36LGsdEEQ5ZG-rmIiBvN5PFCIHDWxGkJG5GmUV9IVp4KWONKJRsZBHTbpnKE_5NMvDdSu69d46OnUa62Y2rUIm-c8ra6Zn5UHzb2Jyi8M"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-['Fira_Code'] text-[10px] text-tertiary uppercase">SYSTEM_DESIGN</span>
+<span class="font-['Fira_Code'] text-[10px] text-on-surface-variant/50">FEB 02</span>
+</div>
+<h3 class="font-['Archivo_Black'] text-xl uppercase tracking-tighter mb-4 leading-snug group-hover:text-primary transition-colors">
+                    Scaling Strategy: Beyond the Dashboard
+                </h3>
+<p class="font-['Manrope'] text-sm text-on-surface-variant/80 mb-6 line-clamp-3">
+                    Tools are not strategy. Why metrics-driven development often leads to localized maxima while missing global goals.
+                </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="font-['Fira_Code'] text-[10px] text-on-surface-variant/40">REF_ID: 079</span>
+<span class="material-symbols-outlined text-primary-container">north_east</span>
+</div>
+</div>
+</section>
+<!-- Newsletter / Social Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-outline-variant/20 bg-surface-container-low">
+<div class="p-12 md:p-20 border-b md:border-b-0 md:border-r border-outline-variant/20">
+<h2 class="font-['Archivo_Black'] text-4xl uppercase tracking-tighter mb-6">Join the Network</h2>
+<p class="font-['Manrope'] text-on-surface-variant mb-10">Monthly strategic insights, technical breakdowns, and architectural updates delivered directly to your terminal.</p>
+<form class="space-y-6">
+<div class="relative">
+<label class="font-['Fira_Code'] text-[10px] uppercase text-tertiary-fixed-dim absolute -top-2 left-0">ENTRY_POINT</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 font-['Fira_Code'] text-sm focus:ring-0 focus:border-tertiary transition-colors placeholder:text-on-surface-variant/30" placeholder="EMAIL_ADDRESS" type="email"/>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-['Archivo_Black'] uppercase text-sm py-4 tracking-[0.2em] hover:bg-primary transition-colors" type="submit">
+                        SUBSCRIBE_TO_FEED
+                    </button>
+</form>
+</div>
+<div class="p-12 md:p-20 flex flex-col justify-center items-center text-center">
+<div class="mb-8">
+<span class="material-symbols-outlined text-6xl text-primary-container">hub</span>
+</div>
+<h3 class="font-['Archivo_Black'] text-3xl uppercase tracking-tighter mb-6">Real-time Intel</h3>
+<p class="font-['Manrope'] text-on-surface-variant mb-10 max-w-sm">For day-to-day tactical updates and active industry discussions, find me on the primary node.</p>
+<a class="inline-flex items-center gap-3 font-['Archivo_Black'] text-sm tracking-widest px-8 py-4 border border-outline text-[#E5E2E1] hover:border-tertiary hover:text-tertiary transition-all" href="https://www.linkedin.com/in/migueamejias-mams/">
+                    FOLLOW_ON_LINKEDIN
+                    <span class="material-symbols-outlined text-lg">arrow_outward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center border-t border-[#B7410E]/10 bg-[#131313]">
+<div class="flex flex-col md:items-start items-center mb-8 md:mb-0">
+<div class="font-['Archivo_Black'] text-lg text-[#E5E2E1] mb-2">SYSTEM_ARCHITECT</div>
+<div class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50">© 2026 MIGUEL ÁNGEL MEJÍA. ALL RIGHTS RESERVED.</div>
+</div>
+<div class="flex gap-8">
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50 hover:text-[#B0D500] transition-all" href="https://www.linkedin.com/in/migueamejias-mams/">LINKEDIN</a>
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50 hover:text-[#B0D500] transition-all" href="https://github.com/miguelamejias">GITHUB</a>
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50 hover:text-[#B0D500] transition-all" href="mailto:migueamejias.mams@gmail.com">EMAIL</a>
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#B0D500] transition-all" href="contact.html">TERMINAL</a>
+</div>
+</footer>
+</body></html>

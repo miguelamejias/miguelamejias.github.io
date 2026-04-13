@@ -30,4 +30,5 @@ For detailed standards and guidelines specific to different areas of the project
 - [Backend Standards](./backend-standards.mdc) - API development, database patterns, testing, security and backend best practices
 - [Frontend Standards](./frontend-standards.mdc) - React components, UI/UX guidelines, and frontend architecture
 - [Documentation Standards](./documentation-standards.mdc) - Technical documentation structure, formatting, and maintenance guidelines, including AI standards like this document
+- [Stitch Standards](./stitch-standards.mdc) - UI design generation with Stitch MCP: project reference, prompt engineering, design system tokens, and screen workflow
 

@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Miguel Ángel Mejía — Strategy Architect</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Fira+Code:wght@300;400;500&amp;family=Manrope:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#353534",
+                    "on-secondary-container": "#bbb4ac",
+                    "tertiary-fixed": "#caf300",
+                    "background": "#131313",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container-high": "#2a2a2a",
+                    "on-surface-variant": "#e0c0b5",
+                    "on-primary-fixed": "#380c00",
+                    "tertiary-fixed-dim": "#b0d500",
+                    "on-primary": "#5c1a00",
+                    "surface-tint": "#ffb59c",
+                    "on-secondary": "#33302a",
+                    "on-tertiary-fixed-variant": "#3e4c00",
+                    "on-secondary-fixed": "#1e1b16",
+                    "outline-variant": "#58423a",
+                    "on-tertiary-container": "#cff900",
+                    "surface-dim": "#131313",
+                    "error-container": "#93000a",
+                    "surface-variant": "#353534",
+                    "secondary-fixed-dim": "#ccc5be",
+                    "on-tertiary": "#2a3400",
+                    "secondary-container": "#4a4640",
+                    "on-error": "#690005",
+                    "primary": "#ffb59c",
+                    "on-tertiary-fixed": "#171e00",
+                    "on-primary-container": "#ffe2d9",
+                    "primary-fixed-dim": "#ffb59c",
+                    "on-error-container": "#ffdad6",
+                    "secondary": "#ccc5be",
+                    "tertiary-container": "#5c7000",
+                    "surface-bright": "#393939",
+                    "on-primary-fixed-variant": "#822800",
+                    "on-background": "#e5e2e1",
+                    "on-surface": "#e5e2e1",
+                    "outline": "#a78a81",
+                    "tertiary": "#b0d500",
+                    "on-secondary-fixed-variant": "#4a4640",
+                    "inverse-primary": "#a93702",
+                    "error": "#ffb4ab",
+                    "primary-container": "#b7410e",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface": "#131313",
+                    "inverse-on-surface": "#313030",
+                    "secondary-fixed": "#e9e1d9",
+                    "primary-fixed": "#ffdbcf",
+                    "surface-container": "#201f1f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem",
+                    "lg": "0rem",
+                    "xl": "0rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Archivo Black", "sans-serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Fira Code", "monospace"],
+                    "display": ["Archivo Black", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; }
+        .blueprint-grid {
+            background-image: linear-gradient(#58423a 1px, transparent 1px), linear-gradient(90deg, #58423a 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.05;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-tertiary selection:text-on-tertiary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 bg-[#131313]/70 backdrop-blur-md">
+<div class="font-['Archivo_Black'] text-2xl tracking-tighter text-[#E5E2E1]">STRATEGY_ARCHITECT</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#B7410E] border-b-2 border-[#B7410E] pb-1" href="index.html">HOME</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="cv.html">CV</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="projects.html">PROJECTS</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="blog.html">BLOG</a>
+<a class="font-['Archivo_Black'] tracking-tighter uppercase text-sm text-[#E5E2E1] hover:text-[#B0D500] transition-colors" href="contact.html">CONTACT</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-headline text-xs tracking-widest uppercase hover:shadow-[0_0_15px_#B0D500] transition-all active:scale-95 duration-75">
+            ESTABLISH_CONNECTION
+        </button>
+</nav>
+<!-- Main Canvas -->
+<main class="relative min-h-screen pt-24 overflow-hidden">
+<!-- Blueprint Overlay -->
+<div class="absolute inset-0 blueprint-grid pointer-events-none"></div>
+<!-- Hero Section -->
+<section class="relative px-8 lg:px-24 py-20 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<span class="font-label text-tertiary text-xs tracking-[0.2em] mb-4 block uppercase">// SYSTEM_ORIGIN_INITIALIZED</span>
+<h1 class="font-display text-5xl lg:text-8xl leading-none mb-8">
+                    NOT A <span class="text-primary-container">TECHNOLOGY</span> PROBLEM. <br/>
+                    A <span class="text-primary-container">DECISION</span> PROBLEM.
+                </h1>
+<p class="font-body text-xl lg:text-2xl text-on-surface-variant max-w-2xl mb-12">
+                    I translate technical complexity into clear business decisions. Forging high-stakes strategy at the intersection of iron and digital fire.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-headline px-10 py-5 text-sm uppercase tracking-widest hover:shadow-[0_0_20px_rgba(176,213,0,0.4)] transition-all">
+                        ESTABLISH CONNECTION
+                    </button>
+<button class="border border-outline/20 px-10 py-5 text-sm uppercase tracking-widest font-headline text-on-surface hover:bg-surface-container-high transition-colors">
+                        VIEW PROTOCOLS
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-4 relative aspect-square">
+<div class="absolute inset-0 bg-surface-container-high rotate-3 border border-outline-variant/10"></div>
+<img alt="Hardware Strategy" class="absolute inset-0 w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="Abstract close-up of high-tech circuit board illuminated by orange and green neon lights in a dark industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHhvCEBWY6oJ0N7ek6lPWMvVruxuQ-6HS8jebrw386FnIhZ6q6bPtqOJdfKtaAuBRwZNm-nil6bqhfuHTxgawABSGzTKG_lyLghZ0HkVOLewXGxW9gbLn4EsaxBDdBUXw67h9oWwqWOzu3I4J54W7nK-kgDgtr7sA9GPljyNb4oZDWD92eumxzhjXSAQoXlwNOScaVvYoXRyWFrZ6ohXO7jhwwoCtXaLwFSN_5Kgs4KJEyBkGYJAY_c1PeK7Q9yBcebzDK6xcO9y0"/>
+<div class="absolute bottom-4 left-4 font-label text-[10px] text-tertiary bg-surface/80 p-2">
+                    REF_ID: CORE_ARCH_001
+                </div>
+</div>
+</section>
+<!-- Problem Section: The Misalignment Gap -->
+<section class="relative bg-surface-container-low py-32 px-8 lg:px-24">
+<div class="max-w-6xl mx-auto">
+<div class="flex items-center gap-4 mb-16">
+<div class="h-px w-20 bg-primary-container"></div>
+<span class="font-label text-primary-container text-xs tracking-widest uppercase">SECTION_01 // THE_DIAGNOSIS</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-4xl lg:text-5xl mb-8 leading-tight">
+                            THE MISALIGNMENT <span class="text-tertiary">GAP</span>
+</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                            Most technical failures aren't caused by bad code; they're caused by bad decisions. When leadership doesn't speak "Hardware" and engineering doesn't speak "EBITDA", capital evaporates.
+                        </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="warning">warning</span>
+<span class="font-body text-on-surface">Loss of strategic momentum due to legacy technical debt.</span>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="error_outline">error_outline</span>
+<span class="font-body text-on-surface">Fragmented AI integration without architectural integrity.</span>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="monetization_on">monetization_on</span>
+<span class="font-body text-on-surface">Uncalculated R&amp;D spending on non-viable hardware prototypes.</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 border-l-4 border-primary-container flex flex-col justify-center">
+<div class="font-label text-tertiary mb-4 text-xs">ROOT_CAUSE_ANALYSIS</div>
+<div class="text-6xl font-headline text-primary mb-2">42%</div>
+<div class="text-on-surface font-headline uppercase text-sm mb-8 tracking-tighter">OF FAILED VENTURES CITE TECHNICAL MISALIGNMENT</div>
+<div class="h-1 bg-surface-variant w-full relative">
+<div class="absolute left-0 top-0 h-full bg-tertiary w-[42%] shadow-[0_0_10px_#B0D500]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section: The Strategic Translator -->
+<section class="py-32 px-8 lg:px-24">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline text-4xl lg:text-6xl mb-24 text-center lg:text-left">
+                    THE STRATEGIC <br/> <span class="text-primary-container">TRANSLATOR</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Service 01 -->
+<div class="bg-surface-container-high p-10 hover:bg-surface-container-highest transition-colors group relative border-outline-variant/10 border">
+<div class="font-label text-[10px] text-tertiary mb-8">SERVICE_MODE_01</div>
+<span class="material-symbols-outlined text-4xl mb-6 text-primary group-hover:scale-110 transition-transform" data-icon="biotech">biotech</span>
+<h3 class="font-headline text-xl mb-4">TECHNICAL DIAGNOSIS</h3>
+<p class="text-on-surface-variant text-sm mb-8 font-light leading-relaxed">
+                            A deep-tissue audit of your technical stack. I identify structural weaknesses before they become catastrophic bottlenecks.
+                        </p>
+<div class="mt-auto flex justify-between items-end">
+<span class="font-label text-[10px] text-outline opacity-50">AUDIT_PROTOCOL_V4</span>
+<span class="material-symbols-outlined text-tertiary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="bg-surface-container-high p-10 hover:bg-surface-container-highest transition-colors group relative border-outline-variant/10 border md:translate-y-8">
+<div class="font-label text-[10px] text-tertiary mb-8">SERVICE_MODE_02</div>
+<span class="material-symbols-outlined text-4xl mb-6 text-primary group-hover:scale-110 transition-transform" data-icon="memory">memory</span>
+<h3 class="font-headline text-xl mb-4">HARDWARE + AI</h3>
+<p class="text-on-surface-variant text-sm mb-8 font-light leading-relaxed">
+                            Engineering the bridge between silicon and intelligence. Strategy for companies building at the physical/digital frontier.
+                        </p>
+<div class="mt-auto flex justify-between items-end">
+<span class="font-label text-[10px] text-outline opacity-50">INTEGRATION_STACK_X</span>
+<span class="material-symbols-outlined text-tertiary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="bg-surface-container-high p-10 hover:bg-surface-container-highest transition-colors group relative border-outline-variant/10 border">
+<div class="font-label text-[10px] text-tertiary mb-8">SERVICE_MODE_03</div>
+<span class="material-symbols-outlined text-4xl mb-6 text-primary group-hover:scale-110 transition-transform" data-icon="description">description</span>
+<h3 class="font-headline text-xl mb-4">DOCUMENT STRATEGY</h3>
+<p class="text-on-surface-variant text-sm mb-8 font-light leading-relaxed">
+                            Turning chaos into blueprints. Developing internal standards and technical roadmaps that align teams and stakeholders.
+                        </p>
+<div class="mt-auto flex justify-between items-end">
+<span class="font-label text-[10px] text-outline opacity-50">STRAT_DOC_BETA</span>
+<span class="material-symbols-outlined text-tertiary opacity-0 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects: Architecture of Iron and Fire -->
+<section class="py-32 px-8 lg:px-24 bg-surface-container-lowest">
+<div class="max-w-6xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-tertiary text-xs block mb-4 uppercase tracking-widest">SELECTED_OUTPUTS</span>
+<h2 class="font-headline text-4xl lg:text-5xl">ARCHITECTURE OF <br/> <span class="text-primary">IRON AND FIRE</span></h2>
+</div>
+<a class="hidden lg:flex items-center gap-2 font-headline text-xs text-on-surface hover:text-tertiary transition-colors" href="projects.html">
+                        VIEW_FULL_ARCHIVE <span class="material-symbols-outlined text-sm" data-icon="east">east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Project Card 1 -->
+<div class="group relative overflow-hidden bg-surface-container-high border border-outline-variant/10">
+<div class="aspect-[16/10] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img alt="Iron Factory" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700" data-alt="Moody image of an automated factory floor with robotic arms and orange glowing metal parts in a high-contrast industrial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOvedwNZmt3o5PgO6RqBaV3RqayEMUQzMCP1dYgzRbFSbr7NBUcytpCATh16LPOWZfNUrqGx2_9aOpgsRxzfRzTsmCAEqH48pgm3A8HU_xgTj4T_TOGdCKCTckBY8dPRCNQ9CNt4Wb6UGKbnEpSvzjyN5J76hhrxRxf0WET4udnn0koMFLfz0BxH2FRmAaX-bgf53ixFyWkeME-vuthxn298ujYNeOQBIaI3d5k7fLnbTQGGrhve5GhPyeYivtFGH7qTQEguNy2zk"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors">PROJECT_FORGE</h3>
+<span class="font-label text-xs text-tertiary">2023_STRAT</span>
+</div>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                                Re-architecting the production lifecycle for a heavy industrial hardware manufacturer through custom AI nodes.
+                            </p>
+<div class="flex flex-wrap gap-2">
+<span class="font-label text-[10px] border border-outline/20 px-2 py-1 uppercase">Hardware</span>
+<span class="font-label text-[10px] border border-outline/20 px-2 py-1 uppercase">Machine Learning</span>
+<span class="font-label text-[10px] border border-outline/20 px-2 py-1 uppercase">L3_Optimization</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative overflow-hidden bg-surface-container-high border border-outline-variant/10">
+<div class="aspect-[16/10] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+<img alt="Digital Fire" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700" data-alt="Topographic digital map with glowing orange lines on a dark blue-black background representing data flow and strategic architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJUhYO_5paBFlcz5okOKDYE8mLqTsyRbNN7_kbYkYx5lPQsy4K7U2-QN4LD9WLDkoXK2jZBROJUIdlGHwFleuda-r1F6_EtOCxd4u0_Z5yxzbT9KD_qdgKnXARPggbPXKggy_C5n5sm7bUFF_FmL7IWNLobEDkdDF1Yu2hlKLLig8xoC3slzNI2lYj9ZGZkvN9FvvxNp7o-I71nd8Lc0ElhDV_KOtx0SWlP6nYR5TJPDPeaVt6IntI5eQd2Wkl9Wpmta9tWCJPBq8"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors">NEURAL_INFRA</h3>
+<span class="font-label text-xs text-tertiary">2024_DEPLOY</span>
+</div>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                                Scalable decision-making engine for real-time logistics, translating messy sensor data into actionable executive insights.
+                            </p>
+<div class="flex flex-wrap gap-2">
+<span class="font-label text-[10px] border border-outline/20 px-2 py-1 uppercase">Strategic_UI</span>
+<span class="font-label text-[10px] border border-outline/20 px-2 py-1 uppercase">Edge_Computing</span>
+<span class="font-label text-[10px] border border-outline/20 px-2 py-1 uppercase">Decision_Ops</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 px-8 text-center bg-surface relative overflow-hidden">
+<div class="absolute inset-0 blueprint-grid opacity-10 pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto">
+<span class="font-label text-tertiary text-xs tracking-widest block mb-6 uppercase">TERMINAL_PROMPT // FINAL_COMMAND</span>
+<h2 class="font-headline text-5xl lg:text-7xl mb-10 leading-tight">READY TO <br/> <span class="text-primary-container">REWIRE</span> YOUR STRATEGY?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-8">
+<button class="bg-primary-container text-on-primary-container font-headline px-12 py-6 text-sm uppercase tracking-widest hover:shadow-[0_0_30px_#B0D500] hover:scale-105 transition-all">
+                        ESTABLISH_CONNECTION
+                    </button>
+</div>
+<div class="mt-20 flex justify-center items-center gap-4 text-outline/40">
+<div class="h-px w-12 bg-outline/20"></div>
+<span class="font-label text-[10px]">AWAITING_INPUT</span>
+<div class="h-px w-12 bg-outline/20"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center border-t border-[#B7410E]/10 bg-[#131313]">
+<div class="font-['Archivo_Black'] text-lg text-[#E5E2E1] mb-6 md:mb-0">STRATEGY_ARCHITECT</div>
+<div class="flex gap-8 mb-6 md:mb-0">
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50 hover:text-[#B0D500] transition-all" href="https://www.linkedin.com/in/migueamejias-mams/">LINKEDIN</a>
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50 hover:text-[#B0D500] transition-all" href="https://github.com/miguelamejias">GITHUB</a>
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50 hover:text-[#B0D500] transition-all" href="mailto:migueamejias.mams@gmail.com">EMAIL</a>
+<a class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50 hover:text-[#B0D500] transition-all" href="contact.html">TERMINAL</a>
+</div>
+<div class="font-['Fira_Code'] text-[10px] uppercase tracking-widest text-[#E5E2E1]/50">
+            © 2026 MIGUEL ÁNGEL MEJÍA. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>

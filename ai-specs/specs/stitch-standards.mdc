@@ -1,0 +1,144 @@
+---
+description: Standards and best practices for using Stitch MCP to design, generate, and manage UI screens for this project. Applies to all AI agents working on frontend design tasks.
+alwaysApply: true
+---
+
+# Stitch MCP Integration Standards
+
+## 1. Overview
+
+[Stitch](https://stitch.googleapis.com) is a Google AI-powered UI design tool accessible via MCP. It allows AI agents to generate, edit, and iterate on UI screens using natural language prompts, and export production-ready frontend code.
+
+This project uses Stitch as the **source of truth for UI design**. All visual design decisions for the portfolio site must be reflected in the Stitch project before being implemented in code.
+
+---
+
+## 2. Project Reference
+
+| Field         | Value                                       |
+|---------------|---------------------------------------------|
+| Project Name  | Miguel Mejía Portfolio                      |
+| Project ID    | `7762919891715156633`                       |
+| Stitch URL    | `https://stitch.googleapis.com/mcp`         |
+| Visibility    | Private                                     |
+| Device Type   | Desktop                                     |
+| Design Theme  | Dark mode, Space Grotesk + Manrope fonts    |
+| Primary Color | `#B7410E` (Copper)                          |
+| Accent Color  | `#B0D500` (Neon)                            |
+
+---
+
+## 3. Available MCP Tools
+
+The following Stitch MCP tools are available and should be used by agents working on UI tasks:
+
+| Tool                        | Purpose                                                   |
+|-----------------------------|-----------------------------------------------------------|
+| `list_projects`             | List all Stitch projects owned by the user                |
+| `get_project`               | Fetch full project details including screen instances     |
+| `list_screens`              | List all screens in a project                             |
+| `get_screen`                | Retrieve a specific screen with its code and metadata     |
+| `generate_screen_from_text` | Create a new screen from a natural language prompt        |
+| `edit_screens`              | Edit one or more existing screens with a prompt           |
+| `generate_variants`         | Generate visual variants of an existing screen            |
+| `create_design_system`      | Create a new design system for the project                |
+| `update_design_system`      | Modify the existing design system tokens                  |
+| `list_design_systems`       | List design systems associated with a project             |
+| `apply_design_system`       | Apply a design system to selected screens                 |
+
+---
+
+## 4. Workflow for UI Design Tasks
+
+### Step 1 — Understand the Request
+Before generating any screen, understand the layout, content, and interaction requirements. Use `get_project` to retrieve the current state of the canvas and existing screens.
+
+### Step 2 — Generate or Edit Screens
+- Use `generate_screen_from_text` for **new** screens.
+- Use `edit_screens` for **modifications** to existing screens.
+- Always reference the Design System (see Section 6) in your prompt.
+- Target `DESKTOP` device type unless explicitly instructed otherwise.
+
+### Step 3 — Review Output
+After generation, use `get_screen` to verify the screen was created correctly and inspect its exported code.
+
+### Step 4 — Sync to Code
+Once a screen is approved, use the exported code from `get_screen` as the implementation reference for the frontend developer agent.
+
+---
+
+## 5. Prompt Engineering for Stitch
+
+When writing prompts for `generate_screen_from_text` or `edit_screens`, always include:
+
+1. **Component identity**: what this screen represents (e.g., "the Hero section of a personal portfolio")
+2. **Content**: actual text, labels, and data to render (do not use Lorem Ipsum)
+3. **Design System reference**: reference the project's visual language — dark background `#131313`, copper primary `#B7410E`, neon accent `#B0D500`, 0px border radius, Space Grotesk / Manrope / Fira Code fonts
+4. **Layout instructions**: grid structure, alignment, spacing expectations
+5. **Interaction notes**: hover states, animations, micro-interactions if relevant
+
+**Example:**
+```
+Generate the Hero section for Miguel Mejía's personal portfolio site.
+Dark background (#131313). Display headline: "STRATEGY. TECHNOLOGY. RESULTS." in Archivo Black, all caps, 56px.
+Below it, a subtitle in Manrope: "Strategy Architect bridging business vision and technical execution."
+CTA button: "VIEW MY WORK" — copper (#B7410E) fill, 0px radius, Archivo Black label.
+Include a Fira Code label above the headline: "SYS_001 // INITIALIZED" in neon (#B0D500).
+Layout: left-aligned, 2-column grid with a technical schematic decoration on the right.
+```
+
+---
+
+## 6. Design System Reference
+
+The portfolio design system is defined as **"The Master Blueprint"**. All screens must adhere to these rules:
+
+### Colors
+- Background: `#131313` (surface)
+- Primary CTA: `#B7410E` (copper)
+- Accent / Technical: `#B0D500` or `#D4FF00` (neon)
+- Text: `#E5E2E1` (white smoke)
+- Cards: `#2A2A2A` (surface_container_high)
+
+### Typography
+- Headlines: **Archivo Black**, all-caps, tight tracking
+- Body: **Manrope** or **Satoshi**
+- Technical metadata: **Fira Code**
+
+### Shape & Layout
+- **0px border radius** everywhere — no rounded corners
+- Sections defined by background color shifts, NOT 1px borders
+- Intentional asymmetry and off-center alignment for "blueprint" feel
+- Large negative space to emphasize content
+
+### Component Rules
+- Buttons: copper fill, 0px radius, Archivo Black uppercase text; neon glow on hover
+- Cards: no divider lines; background shift defines hierarchy
+- Inputs: underline only, Fira Code placeholder text
+- Every card gets a `label-sm` Fira Code ID tag (e.g., `REF_001`) in the top-right corner
+
+---
+
+## 7. Naming Conventions for Screens
+
+Use the following naming pattern when creating new screens:
+
+```
+[section]-[viewport]-[variant]
+```
+
+Examples:
+- `hero-desktop-v1`
+- `projects-desktop-v2`
+- `contact-desktop-dark`
+
+---
+
+## 8. Rules for AI Agents
+
+- **Never implement a UI feature** without first creating or referencing its Stitch screen.
+- **Always use `get_project`** at the start of any design task to get the latest canvas state.
+- **Do not modify** the design system tokens without explicit user approval.
+- **After generating a screen**, always call `get_screen` to confirm it was created and extract the implementation code.
+- **Export the Stitch code** as the reference for the frontend developer, never rewrite styles from scratch.
+- Use model `GEMINI_3_1_PRO` for complex multi-section layouts; `GEMINI_3_FLASH` for fast single-component iterations.
